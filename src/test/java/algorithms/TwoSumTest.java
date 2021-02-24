@@ -10,7 +10,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class TwoSumTest {
 
-
   private static Stream<Arguments> values() {
     return Stream.of(
         Arguments.of(new int[] {1, 2, 3}, 4, new int[] {0, 2}),
