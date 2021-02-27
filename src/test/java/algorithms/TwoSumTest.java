@@ -22,7 +22,7 @@ class TwoSumTest {
   @ParameterizedTest
   @MethodSource("values")
   void shouldReturnExpectedOutput(int[] nums, int target, int[] expected) {
-    final var ints = new TwoSum().twoSum(nums, target);
+    final var ints = TwoSum.solve(nums, target);
 
     assertThat(ints).isEqualTo(expected);
   }

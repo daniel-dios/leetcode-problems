@@ -22,7 +22,7 @@ class FindMedianSortedArraysTest {
   @ParameterizedTest
   @MethodSource("values")
   void shouldReturnExpectedOutput(int[] nums1, int[] nums2, double expected) {
-    final double actual = new FindMedianSortedArrays().findMedianSortedArrays(nums1, nums2);
+    final double actual = FindMedianSortedArrays.solve(nums1, nums2);
 
     assertThat(actual).isEqualTo(expected);
   }

@@ -35,11 +35,11 @@ import java.util.Map;
  * Only one valid answer exists.
  */
 public class TwoSum {
-  public TwoSum() {
+  private TwoSum() {
     // problem class
   }
 
-  public int[] twoSum(int[] nums, int target) {
+  public static int[] solve(int[] nums, int target) {
 
     Map<Integer, Integer> goodNumbers = new HashMap<>();
 

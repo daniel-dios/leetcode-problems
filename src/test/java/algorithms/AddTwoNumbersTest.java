@@ -49,7 +49,7 @@ class AddTwoNumbersTest {
   @MethodSource("values")
   void shouldReturnExpected(ListNode l1, ListNode l2, ListNode expected) {
 
-    final var actual = new AddTwoNumbers().addTwoNumbers(l1, l2);
+    final var actual = AddTwoNumbers.solve(l1, l2);
 
     assertThat(actual).usingRecursiveComparison().isEqualTo(expected);
   }

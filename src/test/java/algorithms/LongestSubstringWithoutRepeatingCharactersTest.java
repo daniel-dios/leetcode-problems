@@ -27,7 +27,7 @@ class LongestSubstringWithoutRepeatingCharactersTest {
   @ParameterizedTest
   @MethodSource("values")
   void shouldReturnExpected(String string, int expected) {
-    final var actual = new LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string);
+    final var actual = LongestSubstringWithoutRepeatingCharacters.solve(string);
 
     assertThat(actual).isEqualTo(expected);
   }
