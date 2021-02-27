@@ -44,8 +44,8 @@ public class TwoSum {
     Map<Integer, Integer> goodNumbers = new HashMap<>();
 
     for (int i = 0; i < nums.length; i++) {
-      if (goodNumbers.containsKey(target - nums[i])){
-        return new int[]{ goodNumbers.get(target-nums[i]), i};
+      if (goodNumbers.containsKey(target - nums[i])) {
+        return new int[] {goodNumbers.get(target - nums[i]), i};
       }
       goodNumbers.put(nums[i], i);
     }
